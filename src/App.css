@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  color: #333;
+}
+
+.app-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.add-form input {
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.add-form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.add-btn {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-btn:hover {
+  background-color: #2563eb;
+}
+
+.add-btn:active {
+  transform: scale(0.98);
+}
+
+.list-wrapper h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #475569;
+}
+
+.empty-message {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 15px;
+  padding: 20px 0;
+}
+
+.shopping-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shopping-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+.shopping-item:hover {
+  background: #f1f5f9;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  flex: 1;
+  word-break: break-word;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #059669;
+  margin: 0 16px;
+}
+
+.delete-btn {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #fca5a5;
+  color: #991b1b;
+}
+
+.total-box {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 2px dashed #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #1e293b;
+}
+
+.total-amount {
+  font-size: 22px;
+  color: #2563eb;
+}
